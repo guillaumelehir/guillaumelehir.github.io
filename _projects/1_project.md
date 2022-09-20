@@ -1,80 +1,32 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Climate-biosphere
+description: Co-evolution of climate and the marine biosphere
+img: /assets/img/todo.png
 importance: 1
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<h2>Objective</h2>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+I am presently focusing on the co-evolution of marine Life and the physical environment. Why did marine Life undergo such a drastic explosion and diversification during the Early Paleozoic? What drivers shaped its temporal evolution? I use the GENIE Earth System Model to simulate the evolution of the physical environment (ocean oxygenation in particular) during the Phanerozoic, and the consequence on the marine biosphere at various temporal and spatial scales.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/img_project_climate_biosphere.png' | relative_url }}" alt="" title="Climate-biosphere illustration"/>
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    <b>Simulated Cambrian phytoplankton (acritarch) biodiversity.</b> Biodiversity was simulated using the METAL model, based on sea-surface temperatures simulated using the FOAM ocean-atmosphere general circulation model. After Zacai, Monnet, Pohl et al., 2021.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+<h2>Selected references</h2>
 
+- Cermeño, P., Garcìa-Comas, C., __Pohl, A.__, Williams, S., Benton, M., Le Gland, G., Muller, R.D., Ridgwell, A., Vallina, S., 2022. Post-extinction recovery of the Phanerozoic oceans and biodiversity hotspots. Nature, doi: 10.1038/s41586-022-04932-6. [[link](https://www.nature.com/articles/s41586-022-04932-6){:target="_blank"}]
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- Stockey, R.G., __Pohl, A.__, Ridgwell, A., Finnegan, S., Sperling, A., 2021, Decreasing Phanerozoic extinction intensity as a consequence of Earth surface oxygenation and metazoan ecophysiology, PNAS, v. 118(41), e2101900118, doi:10.1073/pnas.2101900118. [[link](https://www.pnas.org/content/118/41/e2101900118){:target="_blank"}]
 
+- Zacaï, A., Monnet, C.,  __Pohl, A.__, Beaugrand, G., Mullins, G., Kroeck, D.M., Servais, T., 2021: Truncated bimodal latitudinal diversity gradient in early Paleozoic phytoplankton. Science Advances 7(15), eabd6709. doi: 10.1126/sciadv.abd6709. [[link](https://advances.sciencemag.org/content/7/15/eabd6709){:target="_blank"}]
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- Saupe, E., Qiao, H., Donnadieu, Y., Farnsworth, A., Kennedy-Asser, A., Ladant, J.-B., Lunt, D., __Pohl, A.__, Valdes, P., Finnegan, S., 2019. Extinction intensity during Ordovician and Cenozoic glaciations explained by cooling and palaeogeography. Nature Geoscience 12, 65–70. doi: 10.1038/s41561-019-0504-6. [[link](https://www.nature.com/articles/s41561-019-0504-6){:target="_blank"}]
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
